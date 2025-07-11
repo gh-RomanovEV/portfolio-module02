@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button {
+  letter-spacing: -0.03em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: var(--container);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+/* Скрытие заголовка */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Заголовок секции */
+.section-title {
+  font-size: 55px;
+  line-height: 72px;
+}
+
+/* Стрелка возврата */
+.arrow__btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #1bff07;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in;
+}
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #1bff07;
+  border-right: 5px solid #1bff07;
+  transform: rotate(-45deg);
+  z-index: 100;
+  transition: border-color 0.3s ease-in;
+}
+
+.arrow__btn:hover {
+  border-color: #A25FD3;
+}
+
+.arrow__btn:hover .arrow {
+  border-color: #A25FD3;
+}
